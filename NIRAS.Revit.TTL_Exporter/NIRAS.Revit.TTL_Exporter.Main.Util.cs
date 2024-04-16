@@ -112,7 +112,8 @@ namespace NIRAS.Revit.TTL_Exporter
                     {
                         // Triangulate face to get mesh
                         Mesh mesh = face.Triangulate();
-
+                        if (mesh == null) continue;
+                       
                         int nTriangles = mesh.NumTriangles;
 
                         IList<XYZ> vertices = mesh.Vertices;
@@ -240,7 +241,7 @@ namespace NIRAS.Revit.TTL_Exporter
 
         public static int ConvertLengthToMM(Double len)
         {
-            return Convert.ToInt32(Math.Round(UnitUtils.ConvertFromInternalUnits(len, Autodesk.Revit.DB.DisplayUnitType.DUT_MILLIMETERS)));
+            return Convert.ToInt32(Math.Round(UnitUtils.ConvertFromInternalUnits(len, Autodesk.Revit.DB.UnitTypeId.Millimeters)));
         }
 
     }

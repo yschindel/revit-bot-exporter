@@ -10,3 +10,8 @@ C:\Users\MHRA\source\repos\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug
 C:\Users\MHRA\source\repos\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.dll
 C:\Users\MHRA\source\repos\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.pdb
 C:\Users\MHRA\source\repos\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.csprojAssemblyReference.cache
+C:\Users\viglas\Documents\GitHub\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.csproj.AssemblyReference.cache
+C:\Users\viglas\Documents\GitHub\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.csproj.CoreCompileInputs.cache
+C:\Users\viglas\Documents\GitHub\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.dll
+C:\Users\viglas\Documents\GitHub\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Revit.TTL_Exporter.pdb
+C:\Users\viglas\Documents\GitHub\revit-bot-exporter\NIRAS.Revit.TTL_Exporter\obj\Debug\NIRAS.Re.03075237.Up2Date

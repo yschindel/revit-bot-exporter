@@ -141,9 +141,9 @@ namespace NIRAS.Revit.TTL_Exporter
                         NLT + $"rvt:id \"{e.Id}\" ;" +
                         NLT + $"rvt:guid \"{e.GetIFCGUID()}\" .";
 
-                    string width = Math.Round(UnitUtils.ConvertFromInternalUnits(wall.Width, Autodesk.Revit.DB.DisplayUnitType.DUT_MILLIMETERS), 2).ToString().Replace(",", ".");
+                    string width = Math.Round(UnitUtils.ConvertFromInternalUnits(wall.Width, Autodesk.Revit.DB.UnitTypeId.Millimeters), 2).ToString().Replace(",", ".");
                     double curveLength = wall.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH).AsDouble();
-                    string length = Math.Round(UnitUtils.ConvertFromInternalUnits(curveLength, Autodesk.Revit.DB.DisplayUnitType.DUT_MILLIMETERS), 2).ToString().Replace(",", ".");
+                    string length = Math.Round(UnitUtils.ConvertFromInternalUnits(curveLength, Autodesk.Revit.DB.UnitTypeId.Millimeters), 2).ToString().Replace(",", ".");
 
                     if (cdt)
                     {
@@ -310,8 +310,8 @@ namespace NIRAS.Revit.TTL_Exporter
                             NLT + $"rvt:id \"{space.Id}\" ;" +
                             NLT + $"rvt:guid \"{space.GetIFCGUID()}\" .";
 
-                        string area = Math.Round(UnitUtils.ConvertFromInternalUnits(space.Area, Autodesk.Revit.DB.DisplayUnitType.DUT_SQUARE_METERS), 2).ToString().Replace(",", ".");
-                        string volume = Math.Round(UnitUtils.ConvertFromInternalUnits(space.Volume, Autodesk.Revit.DB.DisplayUnitType.DUT_CUBIC_METERS), 2).ToString().Replace(",", ".");
+                        string area = Math.Round(UnitUtils.ConvertFromInternalUnits(space.Area, Autodesk.Revit.DB.UnitTypeId.SquareMeters), 2).ToString().Replace(",", ".");
+                        string volume = Math.Round(UnitUtils.ConvertFromInternalUnits(space.Volume, Autodesk.Revit.DB.UnitTypeId.SquareMeters), 2).ToString().Replace(",", ".");
 
                         if (cdt)
                         {
@@ -364,8 +364,8 @@ namespace NIRAS.Revit.TTL_Exporter
                             NLT + $"rvt:id \"{room.Id}\" ;" +
                             NLT + $"rvt:guid \"{room.GetIFCGUID()}\" .";
 
-                        string area = Math.Round(UnitUtils.ConvertFromInternalUnits(room.Area, Autodesk.Revit.DB.DisplayUnitType.DUT_SQUARE_METERS), 2).ToString().Replace(",", ".");
-                        string volume = Math.Round(UnitUtils.ConvertFromInternalUnits(room.Volume, Autodesk.Revit.DB.DisplayUnitType.DUT_CUBIC_METERS), 2).ToString().Replace(",", ".");
+                        string area = Math.Round(UnitUtils.ConvertFromInternalUnits(room.Area, Autodesk.Revit.DB.UnitTypeId.SquareMeters), 2).ToString().Replace(",", ".");
+                        string volume = Math.Round(UnitUtils.ConvertFromInternalUnits(room.Volume, Autodesk.Revit.DB.UnitTypeId.CubicMeters), 2).ToString().Replace(",", ".");
 
                         if (cdt)
                         {
